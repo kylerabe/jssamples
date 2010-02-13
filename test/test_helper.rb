@@ -35,4 +35,5 @@ class ActiveSupport::TestCase
   fixtures :all
 
   # Add more helper methods to be used by all tests here...
+  $default_errors = I18n.translate('activerecord.errors.messages')
 end

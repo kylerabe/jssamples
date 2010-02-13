@@ -142,3 +142,43 @@
   [4;35;1mItem Load (0.3ms)[0m   [0mSELECT "items".id FROM "items" WHERE ("items"."name" = 'My Item') LIMIT 1[0m
   [4;36;1mItem Create (0.4ms)[0m   [0;1mINSERT INTO "items" ("name", "created_at", "updated_at", "description") VALUES('My Item', '2010-02-13 16:34:06', '2010-02-13 16:34:06', 'descr...')[0m
   [4;35;1mItem Load (0.4ms)[0m   [0mSELECT "items".id FROM "items" WHERE ("items"."name" = 'My Item') LIMIT 1[0m
+  [4;36;1mCrossSaleGroup Load (0.3ms)[0m   [0;1mSELECT "cross_sale_groups".id FROM "cross_sale_groups" WHERE ("cross_sale_groups"."name" IS NULL) LIMIT 1[0m
+  [4;35;1mCrossSaleGroup Load (0.3ms)[0m   [0mSELECT "cross_sale_groups".id FROM "cross_sale_groups" WHERE ("cross_sale_groups"."name" = 'My Group') LIMIT 1[0m
+  [4;36;1mCrossSaleGroup Create (0.4ms)[0m   [0;1mINSERT INTO "cross_sale_groups" ("name", "created_at", "updated_at") VALUES('My Group', '2010-02-13 17:35:59', '2010-02-13 17:35:59')[0m
+  [4;35;1mCrossSaleGroup Load (0.4ms)[0m   [0mSELECT "cross_sale_groups".id FROM "cross_sale_groups" WHERE ("cross_sale_groups"."name" = 'My Group') LIMIT 1[0m
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT "items".id FROM "items" WHERE ("items"."name" IS NULL) LIMIT 1[0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT "items".id FROM "items" WHERE ("items"."name" = 'My Item') LIMIT 1[0m
+  [4;36;1mItem Create (0.4ms)[0m   [0;1mINSERT INTO "items" ("name", "created_at", "updated_at", "description") VALUES('My Item', '2010-02-13 17:35:59', '2010-02-13 17:35:59', 'descr...')[0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT "items".id FROM "items" WHERE ("items"."name" = 'My Item') LIMIT 1[0m
+  [4;36;1mCrossSaleGroup Load (0.3ms)[0m   [0;1mSELECT "cross_sale_groups".id FROM "cross_sale_groups" WHERE ("cross_sale_groups"."name" IS NULL) LIMIT 1[0m
+  [4;35;1mCrossSaleGroup Load (0.3ms)[0m   [0mSELECT "cross_sale_groups".id FROM "cross_sale_groups" WHERE ("cross_sale_groups"."name" = 'My Group') LIMIT 1[0m
+  [4;36;1mCrossSaleGroup Create (0.5ms)[0m   [0;1mINSERT INTO "cross_sale_groups" ("name", "created_at", "updated_at") VALUES('My Group', '2010-02-13 17:36:32', '2010-02-13 17:36:32')[0m
+  [4;35;1mCrossSaleGroup Load (0.4ms)[0m   [0mSELECT "cross_sale_groups".id FROM "cross_sale_groups" WHERE ("cross_sale_groups"."name" = 'My Group') LIMIT 1[0m
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT "items".id FROM "items" WHERE ("items"."name" IS NULL) LIMIT 1[0m
+  [4;35;1mItem Load (0.2ms)[0m   [0mSELECT "items".id FROM "items" WHERE ("items"."name" = 'My Item') LIMIT 1[0m
+  [4;36;1mItem Create (0.4ms)[0m   [0;1mINSERT INTO "items" ("name", "created_at", "updated_at", "description") VALUES('My Item', '2010-02-13 17:36:32', '2010-02-13 17:36:32', 'descr...')[0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT "items".id FROM "items" WHERE ("items"."name" = 'My Item') LIMIT 1[0m
+  [4;36;1mCrossSaleGroup Load (0.3ms)[0m   [0;1mSELECT "cross_sale_groups".id FROM "cross_sale_groups" WHERE ("cross_sale_groups"."name" IS NULL) LIMIT 1[0m
+  [4;35;1mCrossSaleGroup Load (0.3ms)[0m   [0mSELECT "cross_sale_groups".id FROM "cross_sale_groups" WHERE ("cross_sale_groups"."name" = 'My Group') LIMIT 1[0m
+  [4;36;1mCrossSaleGroup Create (0.4ms)[0m   [0;1mINSERT INTO "cross_sale_groups" ("name", "created_at", "updated_at") VALUES('My Group', '2010-02-13 17:37:54', '2010-02-13 17:37:54')[0m
+  [4;35;1mCrossSaleGroup Load (0.3ms)[0m   [0mSELECT "cross_sale_groups".id FROM "cross_sale_groups" WHERE ("cross_sale_groups"."name" = 'My Group') LIMIT 1[0m
+  [4;36;1mItem Load (0.2ms)[0m   [0;1mSELECT "items".id FROM "items" WHERE ("items"."name" IS NULL) LIMIT 1[0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT "items".id FROM "items" WHERE ("items"."name" = 'My Item') LIMIT 1[0m
+  [4;36;1mItem Create (0.4ms)[0m   [0;1mINSERT INTO "items" ("name", "created_at", "updated_at", "description") VALUES('My Item', '2010-02-13 17:37:54', '2010-02-13 17:37:54', 'descr...')[0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT "items".id FROM "items" WHERE ("items"."name" = 'My Item') LIMIT 1[0m
+  [4;36;1mCrossSaleGroup Load (0.3ms)[0m   [0;1mSELECT "cross_sale_groups".id FROM "cross_sale_groups" WHERE ("cross_sale_groups"."name" IS NULL) LIMIT 1[0m
+  [4;35;1mCrossSaleGroup Load (0.3ms)[0m   [0mSELECT "cross_sale_groups".id FROM "cross_sale_groups" WHERE ("cross_sale_groups"."name" = 'My Group') LIMIT 1[0m
+  [4;36;1mCrossSaleGroup Create (0.5ms)[0m   [0;1mINSERT INTO "cross_sale_groups" ("name", "created_at", "updated_at") VALUES('My Group', '2010-02-13 17:38:15', '2010-02-13 17:38:15')[0m
+  [4;35;1mCrossSaleGroup Load (0.4ms)[0m   [0mSELECT "cross_sale_groups".id FROM "cross_sale_groups" WHERE ("cross_sale_groups"."name" = 'My Group') LIMIT 1[0m
+  [4;36;1mItem Load (0.2ms)[0m   [0;1mSELECT "items".id FROM "items" WHERE ("items"."name" IS NULL) LIMIT 1[0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT "items".id FROM "items" WHERE ("items"."name" = 'My Item') LIMIT 1[0m
+  [4;36;1mItem Create (0.4ms)[0m   [0;1mINSERT INTO "items" ("name", "created_at", "updated_at", "description") VALUES('My Item', '2010-02-13 17:38:15', '2010-02-13 17:38:15', 'descr...')[0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT "items".id FROM "items" WHERE ("items"."name" = 'My Item') LIMIT 1[0m
+  [4;36;1mCrossSaleGroup Load (0.3ms)[0m   [0;1mSELECT "cross_sale_groups".id FROM "cross_sale_groups" WHERE ("cross_sale_groups"."name" IS NULL) LIMIT 1[0m
+  [4;35;1mCrossSaleGroup Load (0.3ms)[0m   [0mSELECT "cross_sale_groups".id FROM "cross_sale_groups" WHERE ("cross_sale_groups"."name" = 'My Group') LIMIT 1[0m
+  [4;36;1mCrossSaleGroup Create (0.4ms)[0m   [0;1mINSERT INTO "cross_sale_groups" ("name", "created_at", "updated_at") VALUES('My Group', '2010-02-13 17:39:02', '2010-02-13 17:39:02')[0m
+  [4;35;1mCrossSaleGroup Load (0.4ms)[0m   [0mSELECT "cross_sale_groups".id FROM "cross_sale_groups" WHERE ("cross_sale_groups"."name" = 'My Group') LIMIT 1[0m
+  [4;36;1mItem Load (0.2ms)[0m   [0;1mSELECT "items".id FROM "items" WHERE ("items"."name" IS NULL) LIMIT 1[0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT "items".id FROM "items" WHERE ("items"."name" = 'My Item') LIMIT 1[0m
+  [4;36;1mItem Create (0.4ms)[0m   [0;1mINSERT INTO "items" ("name", "created_at", "updated_at", "description") VALUES('My Item', '2010-02-13 17:39:02', '2010-02-13 17:39:02', 'descr...')[0m
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT "items".id FROM "items" WHERE ("items"."name" = 'My Item') LIMIT 1[0m

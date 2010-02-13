@@ -1,0 +1,21 @@
+<table style="margin-left: -3px;">
+  <tr>
+    <td style="vertical-align: middle;">
+      <%= image_tag('buttons/add.png') %>
+    </td>
+    <td style="vertical-align: middle; padding-top: 2px;">
+      <% remote_form_for CrossSaleGroup.new do |f| %>
+        <%= f.error_messages %>
+        <%= f.text_field :name %>
+        <%= f.submit 'Add' %>
+      <% end %>
+    </td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>
+      <%= link_to_remote "Finished", :update => 'add_record_div', :url => {:action => 'show_add_button'}, :html => {:href => url_for(:action => 'index')} %>
+    </td>
+  </tr>
+</table>
+<script language="JavaScript"> document.forms[0].cross_sale_group_name.focus(); </script>

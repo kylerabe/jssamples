@@ -1,0 +1,12 @@
+<table class="cross-sale">
+  <tr>
+    <th colspan="<%= @cross_sale_group.items.size %>">You might also be interested in these items.</th>
+  </tr>
+  <tr>
+    <% @cross_sale_group.items.each do |i| %>
+      <td class="cross-sale-text">
+        <%= link_to "#{i.name}", '#' %>
+      </td>
+    <% end %>
+  </tr>
+</table>

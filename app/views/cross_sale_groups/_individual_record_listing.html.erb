@@ -1,0 +1,13 @@
+<tr id="record_<%= csg.id %>_row">
+  <td>
+    <%= link_to_remote image_tag('buttons/delete.png', :style => "border: 0;"),
+                       :url => {:controller => 'cross_sale_groups', :action => 'destroy', :id => csg}, :method => :delete,
+                       :html => {:href => url_for(:controller => 'cross_sale_groups', :action => 'destroy', :id => csg), :method => :delete},
+                       :confirm => 'Are you sure?' %>
+  </td>
+  <td><%= link_to image_tag('buttons/search-white.gif', :style => "border: 0;"), cross_sale_group_path(csg) %></td>
+  <td id="record_<%= csg.id %>_arrow">
+    <%= render :partial => 'right_arrow', :locals => {:csg => csg} %>
+  </td>
+  <td><%= editable_content_tag(:span, csg, 'name', true, nil, nil, {:highlightcolor => "#FFFFFF"}) %></td>
+</tr>

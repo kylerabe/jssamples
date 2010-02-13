@@ -1,0 +1,10 @@
+<% csg.items.each do |i| %>
+  <%= render :partial => 'group_item', :locals => {:csg => csg, :i => i} %>
+<% end %>
+
+<tr id="cross_sale_group_<%= csg.id %>_new_item_row">
+  <td colspan="3"></td>
+  <td id="cross_sale_group_<%= csg.id %>_new_item_cell">
+    <%= render :partial => 'new_group_item', :locals => {:csg => csg} %>
+  </td>
+</tr>

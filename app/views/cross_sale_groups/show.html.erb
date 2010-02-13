@@ -1,0 +1,14 @@
+<h1><%=h @cross_sale_group.name %></h1>
+
+<% if @cross_sale_group.items.empty? %>
+
+  <p>This Cross-Sale Group has no associated items.</p>
+
+<% else %>
+
+  <%= render :partial => 'shared/cross_sale_table' %>
+
+<% end %>
+
+<hr />
+<p><%= link_to 'Return to List', cross_sale_groups_path %></p>

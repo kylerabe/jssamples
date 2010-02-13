@@ -1,0 +1,573 @@
+/* *****Main Styles for Mass Street Music***** */
+
+/* ***Big, Important DIVs*** */
+body {
+  margin: 10px;
+  padding: 0;
+  background-color: #CCCCCC;
+  background-image: url(/images/backgrounds/msm-bg.jpg);
+  font-family: Verdana, Helvetica, sans-serif;
+  font-size: 13px;
+  }
+
+#leftcontent {
+  position: absolute;
+  left: 10px;
+  top: 71px;
+  width: 200px;
+  border-top: 1px solid black;
+  }
+
+#centercontent {
+  background-color: #FFFFFF;
+  background-image: url(/images/backgrounds/guitar.png);
+  background-position: top right;
+  background-repeat: repeat-y;
+  margin: 0 220px;
+  padding: 0 10px;
+  border-left: 1px solid #BBBBBB;
+  border-right: 1px solid #BBBBBB;
+  border-bottom: 1px solid #BBBBBB;
+  }
+
+#rightcontent {
+  position: absolute;
+  right: 10px;
+  top: 71px;
+  width: 200px;
+  border-top: 1px solid black;
+  }
+
+#banner {
+  background-color: white;
+  background-image: url(/images/backgrounds/woodgrain.jpg);
+  height: 60px;
+  text-align: center;
+  border: 1px solid black;
+  }
+
+#banner a img {
+  border: 0;
+  }
+
+#foot {
+  background-color: transparent;
+  color: #BBBBBB;
+  border-top: 1px solid #BBBBBB;
+  padding: 5px;
+  text-align: center;
+  font-size: .9em;
+  clear: both;
+  }
+
+#notice {
+  border: 2px solid red;
+  padding: 1em;
+  margin: 0 1em 1em 1em;
+  background-color: #F0F0F0;
+  }
+
+#divTopLeft {
+  position: fixed;
+  z-index: 100;
+  width: 200px;
+  }
+/* ***End Big, Important DIVs*** */
+
+/* ***Important Classes*** */
+.box {
+  border: 1px solid #774433;
+  margin-top: 20px;
+  background-color: #FFFFFF;
+  }
+
+.top {
+  border: 1px solid #555555;
+  margin-top: 0;
+  background-color: #555555;
+  }
+
+.pagination {
+  margin-bottom: 8px;
+  margin-top: 0;
+  padding: 0;
+  text-align: center;
+  }
+
+.centered {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  }
+
+.total {
+  font-weight: bold;
+  }
+
+.item_listing {
+  display: block;
+  width: 100%;
+  }
+
+.item_listing:after {
+  content: ".";
+  display: block;
+  height: 0;
+  visibility: hidden;
+  clear: both;
+  }
+
+.noborder {
+  border: 0;
+  }
+
+.tinylink {
+  font-size: 10px;
+  font-weight: normal;
+  color: #FFFFFF;
+  }
+
+.gray {
+  color: #999999;
+  }
+
+.title {
+  color: #000000;
+  }
+
+.new {
+  color: #CC0000; 
+  font-size: .6em;
+  vertical-align: top;
+  }
+/* ***End Important Classes*** */
+
+/* ***Standard Tags*** */
+h1, h2 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  margin: 0;
+  padding-top: 8px;
+  }
+
+h1 {
+  font-size: 26px;
+  }
+
+h2 {
+  font-size: 20px;
+  }
+
+h3 {
+  margin: 10px 0;
+  padding: 7px 2px;
+  background-color: #FFFFFF;
+  color: #774433;
+  border: 1px solid #774433;
+  font-size: 12px;
+  text-align: center;
+  }
+
+h3 a {
+  color: #774433;
+  }
+
+
+h4 {
+  margin: 0;
+  padding: 5px;
+  background-color: #774433;
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: normal;
+  }
+
+h5 {
+  margin: 0;
+  padding: 5px;
+  background-color: #C3AE94;
+  color: #774433;
+  font-size: 14px;
+  }
+
+a {
+  text-decoration: none;
+  }
+
+a:hover {
+  text-decoration: underline;
+  }
+
+hr {
+  border: 0;
+  color: #BBBBBB;
+  background-color: #BBBBBB;
+  height: 1px;
+  }
+
+fieldset {
+  border: 2px solid #774433;
+  padding: 0 10px;
+  margin: 0;
+  }
+
+legend {
+  color: #774433;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  }
+/* ***End Standard Tags*** */
+
+/* ***Lists (for most side links)*** */
+dl {
+  margin: 0;
+  padding: 0;
+  }
+
+dl dd {
+  margin: 0;
+  font-size: 14px;
+  color: #774433;
+  text-indent: 5px;
+  }
+
+dl dd a {
+  color: #774433;
+  display: block;
+  }
+
+dl dd a:hover {
+  background-color: #C3AE94;
+  text-decoration: none;
+  }
+
+#rightcontent .box dl dd a.inline {
+  display: inline;
+  }
+/* ***End Lists*** */
+
+/* ***Buttons, Prices, and Other Item Stuff *** */
+img.buy, input.buy, p.buy, a img.buy {
+  margin: 5px 0;
+  border: 0;
+  display: inline;
+  color: #774433;
+  font-weight: bold;
+  }
+
+img.button {
+  border: 0;
+  }
+
+#email_form_div {
+  width: 620px;
+  margin: 0 auto;
+  }
+
+#centercontent form {
+  margin: 0;
+  }
+
+img.gallery {
+  border: 0;
+  margin: 12px 0 10px 10px;
+  float: right;
+  }
+
+img.historyright {
+  border: 1px solid black;
+  margin: 5px 0 0 5px;
+  float: right;
+  }
+
+img.historyleft {
+  border: 1px solid black;
+  margin: 5px 5px 0 0;
+  float: left;
+  }
+
+input.noborder {
+  margin-bottom: -5px;
+  }
+
+p.retail_price {
+  text-decoration: line-through;
+  margin-bottom: 0;
+  }
+
+.our_price {
+  margin: 0;
+  font-weight: bold;
+  color: #774433;
+  }
+
+.special {
+  color: #CC0000; 
+  font-weight: bold;
+  margin: 0;
+  }
+
+p.message {
+  font-weight: bold;
+  font-style: italic;
+  color: #774433;
+  margin: 5px 0;
+  }
+
+p.tinytext {
+  color: #BBBBBB;
+  font-size: .9em;
+  }
+
+#thumbs img {
+  border: 0;
+  margin-top: 10px;
+  }
+
+#thumbs img.noborder {
+  border: 0;
+  }
+
+#centercontent #item_table {
+  border: 0;
+  margin: 10px 0;
+  padding: 0;
+  border-collapse: collapse;
+  }
+
+#centercontent #item_table tr td {
+  padding: 0;
+  vertical-align: top;
+  }
+
+#centercontent #item_table tr td h2 {
+  padding-top: 0;
+  }
+
+#centercontent #item_table #image_cell {
+  width: 620px;
+  text-align: center;
+  }
+
+#centercontent #item_table #image_cell #item_pic {
+  margin: 0;
+  border: 0;
+  }
+
+.inplaceeditor-form input {
+  margin-right: 10px;
+  }
+
+#sortable-list li {
+  cursor: -moz-grab;
+  padding: 5px 0;
+  }
+
+#specs_table {
+  margin: 20px 0;
+  border-collapse: collapse;
+  }
+
+#specs_table tr th {
+  text-align: left;
+  }
+
+#item_table #specs_table tr td {
+  padding: 5px;
+  vertical-align: top;
+  }
+
+table.cross-sale {
+  border: 1px solid #BBBBBB;
+  border-collapse: collapse;
+  text-align: center;
+  float: right;
+  }
+
+table.cross-sale tr th, #centercontent table.cross-sale tr th {
+  border: 1px solid #BBBBBB;
+  padding: 5px;
+  }
+
+table.cross-sale tr td, #centercontent table.cross-sale tr td {
+  border: 0;
+  width: 150px;
+  padding: 10px;
+  }
+
+table.cross-sale tr td a img {
+  border: 0;
+  }
+
+table.cross-sale tr td.cross-sale-image {
+  vertical-align: bottom;
+  }
+
+table.cross-sale tr td.cross-sale-text {
+  vertical-align: top;
+  }
+
+#centercontent table.index-items {
+  margin: 10px auto;
+  border: 0;
+  border-collapse: collapse;
+  text-align: center;
+  }
+
+#centercontent table.index-items tr th {
+  padding: 5px;
+  background-color: #E8E8E8;
+}
+
+#centercontent table.index-items tr td {
+  width: 100px;
+}
+
+#centercontent table.index-items tr td.image-cell {
+  vertical-align: bottom;
+  padding-top: 10px;
+  }
+
+#centercontent table.index-items tr td.text-cell {
+  vertical-align: top;
+  padding-bottom: 10px;
+  }
+
+#centercontent table.index-items tr td a img {
+  border: 0;
+  }
+
+
+/* ***End Buttons, Prices, and Other Item Stuff *** */
+
+/* ***For Quick-Link Pop-Ups*** */
+.box ul {
+  margin: 2px;
+  padding: 0;
+  border: 1px dotted #774433;
+  list-style: none;
+  width: 192px;
+  }
+
+.box ul li {
+  position: relative;
+  font-weight: bold;
+  }
+
+.box ul li ul {
+  position: absolute;
+  left: 190px;
+  top: -2px;
+  display: none;
+  background-color: #FFFFFF;
+  }
+
+.box ul li a {
+  display: block;
+  text-decoration: none;
+  color: #774433;
+  padding: 2px 5px;
+  }
+
+.box ul li:hover, .box ul li a:hover {
+  background-color: #C3AE94;
+  text-decoration: none;
+  }
+
+.box ul li:hover ul, .box ul li.over ul {
+  display: block;
+  }
+
+/* Fix IE. Hide from IE Mac \*/
+* html .box ul li { float: left; height: 1%; }
+* html .box ul li a { height: 1%; }
+/* End */
+/* ***End Quick-Link Pop-Ups*** */
+
+/* ***Most Popular Items List*** */
+table.popular {
+  border: 1px dotted #774433;
+  padding: 0;
+  margin: 2px;
+  font-weight: bold;
+  border-collapse: collapse;
+}
+
+table.popular tr td {
+  vertical-align: top;
+}
+
+table.popular tr td.number {
+  text-align: right;
+}
+
+table.popular tr td.item {
+  text-align: left;
+}
+
+table.popular tr td a {
+  color: #774433;
+  display: block;
+  padding: 3px 2px;
+}
+
+table.popular tr td a:hover {
+  background-color: #C3AE94;
+  text-decoration: none;
+}
+
+table.popular tr:hover {
+  background-color: #C3AE94;
+}
+
+/* ***End Most Popular Items List*** */
+
+/* End Most Popular Items List *?
+
+/* ***Search Box Styles*** */
+.box form {
+  margin: 0;
+  }
+
+.box form input.search {
+  margin: 2px 4px;
+  width: 155px;
+  padding-bottom: 2px;
+  margin-bottom: 5px;
+  }
+
+.box ul li.nohover {
+  background-color: #FFFFFF;
+  }
+/* ***End Search Box Styles*** */
+
+/* ***Checkout Forms and Tables*** */
+label {
+  float: left;
+  text-align: right;
+  width: 200px;
+  }
+
+label.required {
+  font-weight: bold;
+  }
+
+input, select {
+  border: 1px solid #BBBBBB;
+  }
+
+#centercontent table {
+  border: 1px solid #BBBBBB;
+  margin-bottom: 20px;
+  }
+
+#centercontent table tr td, #centercontent table tr th {
+  padding: 0 10px;
+  }
+
+#centercontent table.noborder {
+  border: 0;
+  }
+/* ***End Checkout Forms and Tables*** */
+
+/* *****End Main Styles for Mass Street Music***** */

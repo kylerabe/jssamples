@@ -1,0 +1,27 @@
+<div id="admin_content_div">
+  <h1>Listing Cross-Sale Groups</h1>
+  <%= link_to 'New Cross-Sale Group', new_cross_sale_group_path %>
+  <hr />
+
+
+  <table id="record_list_div">
+    <tr>
+      <th colspan="3"></th>
+      <th style="text-align: left;">Name (click to edit)</th>
+    </tr>
+    
+    <% @cross_sale_groups.each do |csg| %>
+      <%= render :partial => 'individual_record_listing', :locals => {:csg => csg} %>
+    <% end %>
+
+  </table>
+
+
+  <div id="add_record_div">
+    <%= render :partial => 'add_button' %>
+  </div>
+
+
+  <hr />
+  <%= link_to 'New Cross-Sale Group', new_cross_sale_group_path %>
+</div>

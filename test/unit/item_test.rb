@@ -17,16 +17,6 @@ class ItemTest < ActiveSupport::TestCase
     assert_equal $default_errors[:taken], item.errors.on(:name)
   end
 
-  test "cross sale group not empty" do
-    # Fixture :collings_om1 has associated :acoustics csg
-    assert !items(:collings_om1).cross_sale_groups.empty?
-  end
-
-  test "cross sale group empty" do
-    # Fixture :humidifier has no associated csg
-    assert items(:humidifier).cross_sale_groups.empty?
-  end
-
   test "valid item saves" do
     item = Item.new(:name => "My Item", :description => "Descr...")
     assert item.valid?

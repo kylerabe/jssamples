@@ -1,0 +1,7 @@
+<% form_remote_tag :url => associate_item_with_cross_sale_group_path(csg.id) do %>
+  <%= text_field_tag 'item_id', 'Enter Item Number', :style => "color: #BBBBBB;", :onfocus => 'this.value=""; this.style.color="#000000"' %>
+  <%= submit_tag 'Add Item' %>
+  <%= link_to_remote 'Cancel',
+                     :url => {:controller => 'cross_sale_groups', :action => 'index', :id => csg.id}, :method => :get,
+                     :html => {:href => url_for(cross_sale_groups_path)} %>
+<% end %>

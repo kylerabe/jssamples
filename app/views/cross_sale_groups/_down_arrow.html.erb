@@ -1,0 +1,4 @@
+<%= link_to_remote image_tag('buttons/down-arrow.png', :style => "border: 0;"),
+                   :url => {:controller => 'cross_sale_groups', :action => 'index', :id => csg.id}, :method => :get,
+                   :html => {:href => cross_sale_groups_path} %>
+

@@ -2,12 +2,10 @@
 collings_om1:
   name: Collings OM1
   description: OM acoustic guitar
-  cross_sale_groups: acoustics
 
 prs_mccarty:
   name: Paul Reed Smith McCarty
   description: Hot electric guitar
-  cross_sale_groups: electrics
 
 humidifier:
   name: Humidifier

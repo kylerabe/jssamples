@@ -1,0 +1,9 @@
+<tr id="cross_sale_group_<%= csg.id %>_item_<%= i.id %>_row">
+  <td colspan="2"></td>
+  <td>
+    <%= link_to_remote image_tag('buttons/delete-small.png', :style => "border: 0;"),
+      { :url => dissociate_item_from_cross_sale_group_path(:id => csg.id, :item_id => i.id), :confirm => 'Are you sure?', :method => :delete},
+      {:href => dissociate_item_from_cross_sale_group_path(:id => csg.id, :item_id => i.id), :confirm => 'Are you sure?', :method => :delete} %>
+  </td>
+  <td><%= i.name %> (<%= link_to i.id, "#", :target => "_blank" %>)</td>
+</tr>

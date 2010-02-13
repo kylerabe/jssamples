@@ -8,11 +8,18 @@ class CrossSaleGroupTest < ActiveSupport::TestCase
   end
 
   test "unique name required" do
-    csg1 = CrossSaleGroup.new(:name => "My Group")
-    assert csg1.save
-    csg2 = CrossSaleGroup.new(:name => "My Group")
-    assert !csg2.save
-    assert csg2.errors.invalid?(:name)
-    assert_equal $default_errors[:taken], csg2.errors.on(:name)
+    # Fixture :acoustics named "Acoustics"
+    assert_equal "Acoustics", cross_sale_groups(:acoustics).name
+    csg = CrossSaleGroup.new(:name => "Acoustics")
+    assert !csg.save
+    assert csg.errors.invalid?(:name)
+    assert_equal $default_errors[:taken], csg.errors.on(:name)
+  end
+
+  test "valid cross sale group saves" do
+    csg = CrossSaleGroup.new(:name => "My CSG")
+    assert csg.valid?
+    assert csg.save
+    assert_respond_to(csg, :name)
   end
 end

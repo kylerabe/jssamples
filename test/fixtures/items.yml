@@ -1,9 +1,22 @@
 # Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+collings_om1:
+  name: Collings OM1
+  description: OM acoustic guitar
+  cross_sale_groups: acoustics
 
-one:
-  name: MyString
-  description: MyString
+prs_mccarty:
+  name: Paul Reed Smith McCarty
+  description: Hot electric guitar
+  cross_sale_groups: electrics
 
-two:
-  name: MyString
-  description: MyString
+humidifier:
+  name: Humidifier
+  description: Keep your acoustic safe
+
+cable:
+  name: Cable
+  description: Connect your electric to an amp
+
+strap:
+  name: Strap
+  description: Hold your guitar up

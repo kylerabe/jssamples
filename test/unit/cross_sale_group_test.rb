@@ -16,6 +16,16 @@ class CrossSaleGroupTest < ActiveSupport::TestCase
     assert_equal $default_errors[:taken], csg.errors.on(:name)
   end
 
+  test "has associated items" do
+    # Fixture :acoustics has items
+    assert !cross_sale_groups(:acoustics).items.empty?
+  end
+
+  test "has no associated items" do
+    csg = CrossSaleGroup.new(:name => "My CSG")
+    assert csg.items.empty?
+  end
+
   test "valid cross sale group saves" do
     csg = CrossSaleGroup.new(:name => "My CSG")
     assert csg.valid?

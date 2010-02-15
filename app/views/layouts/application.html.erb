@@ -13,11 +13,16 @@
   </head>
 
   <body style="background-image: none; background-color: #FFFFFF;">
-    <div id=banner><%= link_to 'JavaScript Samples', :action => :index %></div>
+    <div id=banner><%= link_to image_tag('whitelogo.gif'), :action => :index %></div>
 
     <% if flash[:notice] -%>
       <div id="notice"><%= flash[:notice] %></div>
     <% end -%>
+
+    <p>Administrative tasks:
+      <%= link_to "Cross-Sale Groups", cross_sale_groups_path %> |
+      <%= link_to "Items",             items_path %>
+    </p>
 
     <hr />
 

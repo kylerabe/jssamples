@@ -41,6 +41,7 @@ ActionController::Routing::Routes.draw do |map|
 
   # Create RESTful routes for Cross-Sale Groups
   map.resources :cross_sale_groups
+  map.resources :items
 
   # Create named routes for associating/dissociating items with Cross-Sale Groups
   map.associate_item_with_cross_sale_group  'cross_sale_groups/:id/item',

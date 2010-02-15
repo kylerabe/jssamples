@@ -26,16 +26,15 @@ module Inplace
       element_options ||= {}
       element_options[:id] = dom_id(object)+"_#{property}" if element_options[:id].blank?()
 
-      url ||= "/#{object_name.pluralize}/#{object.id}"
+      url ||= "/#{object_name.pluralize}/#{object.to_param}"
       url += '.json'
 
       ajax_options[:method] = 'put'
       options_for_edit = jsonify(edit_options)
       options_for_ajax = jsonify(ajax_options)
 
-      tg = content_tag(element_type, object.send(property), element_options)
+      tg = content_tag(element_type, h(object.send(property)), element_options)
 
-      # Had to delete #{object.class.name.demodulize.tableize.singularize}. from onComplete
       if editable then
         put_params = protect_against_forgery? ?  "&authenticity_token=#{form_authenticity_token}" : ''
         tg += <<-EOJS
@@ -51,7 +50,8 @@ module Inplace
                 onComplete: function(transport, element) {
                   if (transport && transport.status == 200) {
                     new Effect.Highlight(element.id, {startcolor: "#ffff00"});
-                    element.innerHTML=transport.responseText.evalJSON().#{property};
+                    var value = transport.responseText.evalJSON(true).#{object.class.name.demodulize.tableize.singularize}.#{property};
+                    element.innerHTML = value.escapeHTML();
                   }
                 },
                 onFailure: function(effect, transport) {

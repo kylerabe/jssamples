@@ -61,9 +61,9 @@ body {
   }
 
 #notice {
-  border: 2px solid red;
+  border: 2px solid green;
   padding: 1em;
-  margin: 0 1em 1em 1em;
+  margin: 2em 0;
   background-color: #F0F0F0;
   }
 
@@ -140,6 +140,16 @@ body {
   font-size: .6em;
   vertical-align: top;
   }
+
+.errorExplanation {
+  border: 2px solid #AA0000;
+  padding: 20px;
+  }
+
+.fieldWithErrors {
+  color: #AA0000;
+  font-weight: bold;
+  }
 /* ***End Important Classes*** */
 
 /* ***Standard Tags*** */
@@ -215,6 +225,14 @@ legend {
   font-size: 20px;
   font-weight: bold;
   font-family: Georgia, "Times New Roman", Times, serif;
+  }
+
+th {
+  text-align: left;
+  }
+
+.padleft {
+  padding-left: 20px;
   }
 /* ***End Standard Tags*** */
 
@@ -545,7 +563,7 @@ table.popular tr:hover {
 label {
   float: left;
   text-align: right;
-  width: 200px;
+  width: 100px;
   }
 
 label.required {

@@ -1,0 +1,28 @@
+<h1>Listing Items</h1>
+<%= link_to 'New Item', new_item_path %>
+<hr />
+
+<table>
+  <tr>
+    <th></th>
+    <th class="padleft">ID</th>
+    <th class="padleft">Name</th>
+    <th class="padleft">Description</th>
+  </tr>
+<% @items.each do |item| %>
+  <tr>
+    <td>
+      <%= link_to 'Show', item %>
+      <%= link_to 'Edit', edit_item_path(item) %>
+      <%= link_to 'Destroy', {:action => :destroy, :id => item.id},
+          :method => :delete, :confirm => 'Really?' %>
+    </td>
+    <td class="padleft"><%= item.id %></td>
+    <td class="padleft"><%= item.name %></td>
+    <td class="padleft"><%= item.description %></td>
+  </tr>
+<% end %>
+</table>
+
+<hr />
+<%= link_to 'New Item', new_item_path %>

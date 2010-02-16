@@ -117,7 +117,7 @@ class CrossSaleGroupsController < ApplicationController
   # POST /cross_sale_group/1/item/1
   def associate_item
     cross_sale_group = CrossSaleGroup.find(params[:id])
-    if Item.exists?(params[:item_id])
+    if Item.exists?(params[:item_id]) && !cross_sale_group.items.include?(Item.find(params[:item_id]))
       item = Item.find(params[:item_id])
       cross_sale_group.items << item
       if request.xhr?
@@ -138,7 +138,7 @@ class CrossSaleGroupsController < ApplicationController
         render :update do |page|
           page.insert_html :bottom,
             "cross_sale_group_#{cross_sale_group.id}_new_item_cell",
-            'Could not find an item with that ID'
+            'Could not find an item with that ID or item already in this group'
         end
       else
         flash[:notice] = 'Could not find an item with that ID'

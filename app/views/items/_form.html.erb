@@ -1,0 +1,18 @@
+<% form_for @item do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :name, 'Name: ' %>
+    <%= f.text_field :name %>
+  </p>
+
+  <p>
+    <%= f.label :description, 'Description: ' %>
+    <%= f.text_area :description %>
+  </p>
+
+  <%= f.submit 'Submit', :style => 'margin-left: 100px;' %>
+  or <%= link_to 'Cancel and Return to List', items_path %>
+
+<% end %>
+<script language="JavaScript"> document.forms[0].item_name.focus(); </script>
